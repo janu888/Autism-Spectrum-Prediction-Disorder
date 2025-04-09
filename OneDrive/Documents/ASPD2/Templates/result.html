@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .container h1 {
+            color: #333;
+        }
+        .prediction, .accuracy {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        .home-link {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Autism Prediction Result</h1>
+        <p class="prediction">Prediction: <strong>{{ prediction }}</strong></p>
+        <p class="confidence">Confidence Score: <strong>{{ confidence }}%</strong></p>
+        <p class="accuracy">Model Accuracy: <strong>{{ accuracy }}%</strong></p>
+        <a href="/" class="home-link">⟵ Predict Again</a>
+    </div>
+    
+</body>
+</html>
